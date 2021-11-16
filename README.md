@@ -1,2 +1,5 @@
-# DP-Mastery
-This folder contains practice questions of Dynamic Programming
+# DP Mastery😀
+![Hello Ji](./dp-img.png)
+
+
+# **`List of Problems:-`**
