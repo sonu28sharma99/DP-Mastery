@@ -92,7 +92,7 @@ int knapsackTabulation(vector<int> &wt, vector<int> &val, int capacity, int n) {
 
 
 <!-- FULL SOURCE CODE -->
-<details>
+<details open="true">
 <summary>Full Source Code:</summary>
 <br>
 
@@ -221,8 +221,13 @@ int main() {
 
 ---
 ---
-# Code Image:-
 
+
+<details>
+<summary> Code Image:</summary>
+<br>
 <p align="center">
 <img src="./code.png">
 </p>
+</details>
+
