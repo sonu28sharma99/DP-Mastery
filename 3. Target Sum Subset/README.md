@@ -1,5 +1,5 @@
 
-# 0-1 Knapsack:-
+# Target Sum Subset:-
 
 <!-- USING RECURSION -->
 <details>
