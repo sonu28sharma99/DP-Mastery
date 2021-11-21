@@ -45,6 +45,7 @@ bool targetSumSubset1(vector<int>&subset, int target, int n) {
     // if target is zero then return true
     if (target == 0) return true;
 
+    if (dp[n][target] == true) return true;
 
     // if last element is smaller than target
     if (subset[n - 1] <= target)
