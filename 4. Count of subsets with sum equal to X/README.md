@@ -142,3 +142,6 @@ Output: 4
 ```
 
 
+[![Count of Subsets Sum with a Given Sum](https://res.cloudinary.com/marcomontalbano/image/upload/v1637491033/video_to_markdown/images/youtube--F7wqWbqYn9g-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=F7wqWbqYn9g&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go&index=9 "Count of Subsets Sum with a Given Sum")
+
+
