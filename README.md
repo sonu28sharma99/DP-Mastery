@@ -1,7 +1,7 @@
 
 |Name |                      Problems                                          |  Status  |
 |-----|------------------------------------------------------------------------|---------------------------|
-|1    |🔥   Ugly numbers                                                           |🔗                       |                                                     
+|1    |🔥   Ugly numbers                                                           |[🔗](www.google.com)                       |                                                     
 |2    |🔥   Super ugly numbers                                                     |🔗                       |
 |3    |🔥   Max sum bitonic subsequence                                            |🔗                       |
 |4    |🔥   Lcs of three strings                                                   |🔗                       |             
