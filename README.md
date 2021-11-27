@@ -1,6 +1,5 @@
-
-|Name |                      Problems                                              |               Link                  |    My Solution    |
-|-----|----------------------------------------------------------------------------|---------------------------------------------|---------------------  |              
+| **Name** | **Problems** | **Link** | **My** **Solution** |
+|----------|--------------|----------|---------------------|        
 |1    |🔥   Ugly numbers                                                           | 📌 [Link]( )                       | [My Solution ]() ✅  |                                                     
 |2    |🔥   Super ugly numbers                                                     | 📌 [Link]( )                       | [My Solution ]() ✅  |
 |3    |🔥   Max sum bitonic subsequence                                            | 📌 [Link]( )                       | [My Solution ]() ✅  |

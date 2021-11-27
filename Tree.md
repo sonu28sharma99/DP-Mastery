@@ -1,8 +1,8 @@
 
 
 
-|Name   |                      Problems                                                   |    Link      |    My Solution        |
-|-------|---------------------------------------------------------------------------------|--------------|-----------------------|  
+| **Name** | **Problems** | **Link** | **My** **Solution** |
+|----------|--------------|----------|---------------------|
 |1	    |   🔥  Path Sum III                                                              | 📌 [Link]() |[Solution]() ✅        |                                              
 |2	    |   🔥  Image Multiplication                                                      | 📌 [Link]() |[Solution]() ✅        |             
 |3	    |   🔥  Left View Of BinaryTree                                                   | 📌 [Link]() |[Solution]() ✅        |                             
