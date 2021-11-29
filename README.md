@@ -1,3 +1,7 @@
+![image](./dp.gif)
+
+
+
 | **Name** | **Problems** | **Link** | **My** **Solution** |
 |----------|--------------|----------|---------------------|        
 |1    |🔥   Ugly numbers                                                           | 📌 [Link]( )                       | [My Solution ]() ✅  |                                                     
