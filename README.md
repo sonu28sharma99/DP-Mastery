@@ -1,4 +1,5 @@
-![image](./dp.gif)
+<img src="./dp.gif" width="1000" height="200" />
+
 
 
 
