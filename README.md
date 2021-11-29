@@ -1,4 +1,4 @@
-<img src="./dp.gif" width="1000" height="200" />
+<img src="./dp.gif" />
 
 
 
