@@ -1,6 +1,7 @@
 
 # 0-1 Knapsack:-
 
+<img src="../longest_common_subsequence.gif" />
 <!-- USING RECURSION -->
 <details>
 <summary>Using Recursion:</summary>
