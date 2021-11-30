@@ -1,7 +1,3 @@
-<img src="../../gifs/LinkedList_implementation.gif" />
-
-## Code:
-```c++
 #include<iostream>
 using namespace std;
 
@@ -59,7 +55,7 @@ void insertAtTail(Node*&head, int d) {
 }
 
 // FUNCIOTN TO INSERT NODE AT THE MID WITH POSITON POS
-void insertInMiddle(Node*&head, int d, int pos) {
+void insertAtMiddle(Node*&head, int d, int pos) {
     // if list is empty or pos less than zero
     if (head == NULL or pos <= 0) {
         insertAtHead(head, d);
@@ -92,36 +88,12 @@ void printList(Node*head) {
 }
 
 // DELETION AT THE HEAD
-void deleteAtHead(Node*&head) {
-    if (head == NULL) return;
-    Node*temp = head->next;
+void deleteAtHead(Node*head){
+    Node*temp=head->next;
     delete head;
-    head = temp;
+    temp=head;
 }
 
-// DELETION AT THE TAIL
-void deleteAtTail(Node*&head) {
-    if (head == NULL) return;
-    Node*temp = head;
-    while (temp->next->next != NULL) {
-        temp = temp->next;
-    }
-    delete temp->next;
-    temp->next = NULL;
-}
-
-// DELETION AT THE MIDDLE WITH POSITION POS
-void deleteInMiddle(Node*&head, int pos) {
-    if (head == NULL or pos > listLength(head) or pos < listLength(head))
-        return;
-
-    int count = pos - 1;
-    Node*temp = head;
-    while (count--) {
-        temp = temp->next;
-    }
-    delete temp;
-}
 
 
 
@@ -141,44 +113,12 @@ int main() {
     cout << "inserting at head :-" << endl;
     printList(head);
 
-    cout << "\ninserting at the tail :-" << endl;
+    cout << "inserting at the tail :-" << endl;
     insertAtTail(head, 100000);
     printList(head);
 
-    cout << "\ninserting in the middle with pos=4 :-" << endl;
-    insertInMiddle(head, 200000, 4);
-    printList(head);
-
-    cout << "\ndeletion at the head :-" << endl;
-    deleteAtHead(head);
-    printList(head);
-
-    cout << "\ndeletion at the tail :-" << endl;
-    deleteAtTail(head);
-    printList(head);
-
-
-    deleteInMiddle(head, 3);
+    cout << "inserting in the middle with pos=4 :-" << endl;
+    insertAtMiddle(head, 200000, 4);
     printList(head);
 
 }
-```
-
-## Output:
-```
-inserting at head :-
-9->8->7->6->5->4->3->2->1->NULL
-
-inserting at the tail :-
-9->8->7->6->5->4->3->2->1->100000->NULL
-
-inserting in the middle with pos=4 :-
-9->8->7->6->200000->4->3->2->1->100000->NULL
-
-deletion at the head :-
-8->7->6->200000->4->3->2->1->100000->NULL
-
-deletion at the tail :-
-8->7->6->200000->4->3->2->1->NULL
-8->7->6->200000->4->3->2->1->NULL
-```
