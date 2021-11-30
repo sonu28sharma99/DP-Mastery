@@ -1,0 +1,1 @@
+<img src="../../gifs/LinkedList_implementation.gif" />
