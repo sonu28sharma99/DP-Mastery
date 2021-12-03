@@ -4,24 +4,12 @@ using namespace std;
 
 // KADANES ALGO TO FIND MAX SUM SUBARRAY
 int maxSumSubArray(vector<int>&arr){
-    
-    // Guy's we have to maintin two variables 
-    int current_sum = arr[0];   // for comparing the current sum 
-    int max_sum = arr[0];       // store the max sum so far
+    int curr_sum, max_sum;
+    curr_sum = max_sum = arr[0];
 
     for(int i = 1; i < arr.size(); i++){
-        // Agar sum positive aa raha hai 
-        // then we contribute
-        if(current_sum >= 0)
-            current_sum += arr[i];
-        
-        else 
-            current_sum = arr[i]; 
-        
-        // At the end 
-        // find max of current sum
-        if(current_sum > max_sum)
-            max_sum = current_sum;
+        curr_sum = max(curr_sum + arr[i], arr[i]);
+        max_sum = max(max_sum, curr_sum);
     }
     return max_sum;
 }
