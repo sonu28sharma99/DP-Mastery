@@ -38,6 +38,52 @@ void PostOrder(Node*root){
     cout << root->data << " ";
 }
 
+void PreOrderIterative(Node*root){
+    if(root==NULL)
+        return;
+    
+    // create a stack
+    stack<Node*> stack;
+    stack.push(root);
+
+    while(!stack.empty()){
+        Node*curr = stack.top();
+        stack.pop();
+        cout << curr->data << " ";
+
+        // if right subtree is present
+        // then fill into the stack
+        if(curr->right)
+            stack.push(curr->right);
+        // if left subtree is present
+        // then fill into the stack
+        if(curr->left)
+            stack.push(curr->left);
+    }
+}
+
+
+void InOrderIterative(Node*root){
+    // create a stack
+    stack<Node*> stack;
+
+    // assign root to curr node
+    Node*curr = root;
+
+    while(curr!=NULL || !stack.empty()){
+        if(curr!=NULL){
+            stack.push(curr);
+            curr = curr->left;
+        }
+        else{
+            curr = stack.top();
+            cout << curr->data << " ";
+            stack.pop();
+            curr = curr->right;
+        }
+    }
+}
+
 
 
 int main(){
