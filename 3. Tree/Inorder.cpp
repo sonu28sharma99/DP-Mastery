@@ -84,6 +84,34 @@ void InOrderIterative(Node*root){
     }
 }
 
+void PostOrderIterative(Node*root) {
+	if (root == NULL)
+		return;
+
+	stack<Node*>s;
+	s.push(root);
+	// answer stack will be the int type
+	stack<int> ans;
+
+	while (!s.empty()) {
+
+		Node*curr = s.top();
+		s.pop();
+		ans.push(curr->data);
+
+		// if any node present in left, then push into the stack
+		if (curr->left)
+			s.push(curr->left);
+		// if any node presnet in right, then push into the stack
+		if (curr->right)
+			s.push(curr->right);
+	}
+	// now print the answer stack
+	while (ans.empty() == false) {
+		cout << ans.top() << " ";
+		ans.pop();
+	}
+}
 
 
 int main(){
