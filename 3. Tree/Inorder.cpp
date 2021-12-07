@@ -158,6 +158,8 @@ void printKthLevel(Node*root, int k) {
 
 // LEVEL ORDER TRAVERSAL OF BINARY TREE
 // USING RECURSION
+// TIME     : O(N^2)
+// SPACE    : O(1)
 void LevelOrder(Node*root) {
     if (root == NULL)
         return;
@@ -172,6 +174,36 @@ void LevelOrder(Node*root) {
     }
     return;
 }
+
+// TIME : O(N)
+// SPACE : O(N)
+void LevelOrderIterative(Node*root) {
+    // if root is empty then simply return
+    if (root == NULL)
+        return;
+
+    // create a queue
+    queue<Node*> q;
+    q.push(root);
+
+    // store the current node in queue
+    Node*curr = NULL;
+
+
+    while (!q.empty()) {
+        curr = q.front();
+        q.pop();
+
+        cout << curr->data << " ";
+        // if curr node has any left or right subtree 
+        // then push it into the queue
+        if (curr->left)
+            q.push(curr->left);
+        if (curr->right)
+            q.push(curr->right);
+    }
+}
+
 
 
 // MAIN DRIVER FUNCTION
@@ -189,14 +221,13 @@ int main() {
     root->left->left  = new Node(4);
     root->left->right = new Node(5);
 
-    PreOrder(root);     cout << endl;   // 1 2 4 5 3
-    InOrder(root);      cout << endl;   // 4 2 5 1 3
-    PostOrder(root);    cout << endl;   // 4 5 2 3 1
-    LevelOrder(root);   cout << endl;   // 1 2 3 4 5
-
+    PreOrder(root);             cout << endl;   // 1 2 4 5 3
+    PreOrderIterative(root);    cout << endl;
+    InOrder(root);              cout << endl;   // 4 2 5 1 3
+    InOrderIterative(root);     cout << endl;
+    PostOrder(root);            cout << endl;   // 4 5 2 3 1
+    PostOrderIterative(root);   cout << endl;
+    LevelOrder(root);           cout << endl;   // 1 2 3 4 5
+    LevelOrderIterative(root);  cout << endl;
 
 }
-
-
-
-
